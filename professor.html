@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="professora.css">
+    <link rel="shortcut icon" href="fav-icon.png" type="image/x-icon">
+    <title>Professora EcoSocial</title>
+</head>
+<body>
+
+    <div class="intro">
+        <img src="logo.png" alt="">
+    </div><!--intro-->
+
+    
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt=""></a>
+        </div><!--logo-->
+
+        <nav>
+            <ul>
+                <li><a href="alunos.html">Alunos</a></li>
+                <li><a href="história.html">História</a></li>
+                <li><a href="#">Professora DH</a></li>
+                <li><a href="professor.html">Professor Dev_APP</a></li>
+                <div class="sobre">
+                <a href="#">Conheça mais Sobre o EcoSocial</a>
+                
+            </div>
+            </ul>
+        </nav>
+        <div class="menu-mobile">
+            <div class="animation">
+                <ul>
+                    <li><a href="alunos.html">Alunos</a></li>
+                    <li><a href="história.html">História</a></li>
+                    <li><a href="professora.html">Professora</a></li>
+                    <i class="bi bi-x-lg" onclick="fechar()"></i>
+                </ul>
+            </div><!--animation-->
+            <i class="bi bi-list" id="nav-bar" onclick="clickar()"></i>
+        </div><!--menu-mbile-->
+    </header>
+
+
+    <section class="home">
+        <div class="title-home">
+            <h1>Olá me chamo Vagner, <br>sou Professor de <span>Qualificação Profissional.</span></h1>
+            <p>Profissional com uma sólida formação em Tecnologias, com ênfase em Liderança Organizacional. Com mais de 20 anos de experiência em diversos campos, meu foco está em promover a excelência pessoal e profissional, tanto em mim quanto nos outros.</p>
+            <div class="button">
+                <a href="#">Contato</a>
+            </div><!--button-->
+        </div><!--title-->
+
+        <div class="img-home">
+            <img src="professor.png" alt="">
+        </div><!--img-home-->
+
+        <div class="bg-video">
+            <video src="bg_professora.mp4" autoplay="autoplay" loop muted></video>
+        </div><!--bg-video-->
+
+        
+
+
+    </section>
+
+
+    
+    <script>
+        const ativar=document.querySelector(".animation")
+        const opacity=document.querySelector("#nav-bar")
+
+        function clickar(){
+            ativar.classList.toggle("active")
+            opacity.classList.toggle("active")
+        }
+
+        function fechar(){
+            ativar.classList.toggle("active")
+            setTimeout(function(fechar){
+            opacity.classList.toggle("active")
+    },1000)
+        }
+
+
+        
+
+
+       
+
+
+
+    </script>
+    
+</body>
+</html>
