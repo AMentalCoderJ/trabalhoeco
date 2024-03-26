@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="novo.css">
+    <link rel="shortcut icon" href="fav-icon.png" type="image/x-icon">
+    <title>Professora EcoSocial</title>
+    <style>
+        .carousel {
+          width: 100%;
+          overflow: hidden;
+          position: relative;
+        }
+        .carousel .slides {
+          display: flex;
+          transition: transform 0.5s ease;
+        }
+        .carousel .slide {
+          flex: 0 0 100%;
+        }
+        .carousel-btn {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: rgba(0, 0, 0, 0.5);
+          color: white;
+          padding: 20px;
+          cursor: pointer;
+          z-index: 2;
+        }
+        .carousel-btn.left {
+          left: 10px;
+        }
+        .carousel-btn.right {
+          right: 10px;
+        }
+        .slide{
+            text-align: center;
+        }
+        .slides img{
+            width: 650px;
+            object-fit: cover;
+        }
+
+        @media (max-width:420px) {
+            .slides img{
+            width: 350px;
+            object-fit: cover;
+        }
+        }
+      </style>
+</head>
+<body>
+
+    <div class="intro">
+        <img src="logo.png" alt="">
+    </div><!--intro-->
+
+    
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt=""></a>
+        </div><!--logo-->
+
+        <nav>
+            <ul>
+                <li><a href="alunos.html">Alunos</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="#">Professora DH</a></li>
+                <li><a href="professor.html">Professor Dev_APP</a></li>
+                <div class="sobre">
+                    <a href="galeria.html">Galeria</a>
+            </div>
+            </ul>
+        </nav>
+        <div class="menu-mobile">
+            <div class="animation">
+                <ul>
+                    <li><a href="alunos.html">Alunos</a></li>
+                    <li><a href="historia.html">História</a></li>
+                    <li><a href="professora.html">Professora DH</a></li>
+                    <li><a href="professor.html">Professor Dev_APP</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <i class="bi bi-x-lg" onclick="fechar()"></i>
+                </ul>
+            </div><!--animation-->
+            <i class="bi bi-list" id="nav-bar" onclick="clickar()"></i>
+        </div><!--menu-mbile-->
+    </header>
+
+
+    <div class="carousel">
+        <div class="slides">
+          <div class="slide" ><img src="./1.jpeg" alt=""></div>
+          <div class="slide" ><img src="./18.jpeg" alt=""></div>
+          <div class="slide" ><img src="./3.jpeg" alt=""></div>
+          <div class="slide" ><img src="./4.jpeg" alt=""></div>
+          <div class="slide" ><img src="./5.jpeg" alt=""></div>
+          <div class="slide" ><img src="./7.jpeg" alt=""></div>
+          <div class="slide" ><img src="./8.jpeg" alt=""></div>
+          <div class="slide" ><img src="./9.jpeg" alt=""></div>
+          <div class="slide" ><img src="./10.jpeg" alt=""></div>
+          <div class="slide" ><img src="./11.jpeg" alt=""></div>
+          <div class="slide" ><img src="./12.jpeg" alt=""></div>
+          <div class="slide" ><img src="./13.jpeg" alt=""></div>
+          <div class="slide" ><img src="./14.jpeg" alt=""></div>
+          <div class="slide" ><img src="./15.jpeg" alt=""></div>
+          <div class="slide" ><img src="./16.jpeg" alt=""></div>
+          <div class="slide" ><img src="./17.jpeg" alt=""></div>
+          <div class="slide" ><img src="./22.jpeg" alt=""></div>
+          <div class="slide" ><img src="./19.jpeg" alt=""></div>
+          <div class="slide" ><img src="./20.jpeg" alt=""></div>
+          <div class="slide" ><img src="./21.jpeg" alt=""></div>
+        </div>
+        <div class="carousel-btn left" onclick="moveSlide(-1)">&#10094;</div>
+        <div class="carousel-btn right" onclick="moveSlide(1)">&#10095;</div>
+      </div>
+    
+    
+      <script>
+        let slideIndex = 0;
+        showSlide(slideIndex);
+      
+        function moveSlide(n) {
+          showSlide(slideIndex += n);
+        }
+      
+        function showSlide(n) {
+          const slides = document.querySelectorAll('.slide');
+          if (n >= slides.length) { slideIndex = 0; }
+          if (n < 0) { slideIndex = slides.length - 1; }
+          slides.forEach(slide => slide.style.transform = `translateX(-${slideIndex * 100}%)`);
+        }
+      
+        let touchstartX = 0;
+        let touchendX = 0;
+      
+        document.querySelector('.carousel').addEventListener('touchstart', function(event) {
+          touchstartX = event.changedTouches[0].screenX;
+        }, false);
+      
+        document.querySelector('.carousel').addEventListener('touchend', function(event) {
+          touchendX = event.changedTouches[0].screenX;
+          handleGesture();
+        }, false);
+      
+        function handleGesture() {
+          if (touchendX < touchstartX) {
+            moveSlide(1); // Swipe left
+          }
+          if (touchendX > touchstartX) {
+            moveSlide(-1); // Swipe right
+          }
+        }
+      </script>
+    
+    <script>
+        const ativar=document.querySelector(".animation")
+        const opacity=document.querySelector("#nav-bar")
+
+        function clickar(){
+            ativar.classList.toggle("active")
+            opacity.classList.toggle("active")
+        }
+
+        function fechar(){
+            ativar.classList.toggle("active")
+            setTimeout(function(fechar){
+            opacity.classList.toggle("active")
+    },1000)
+        }
+
+
+        
+
+
+       
+
+
+
+    </script>
+    
+</body>
+</html>
