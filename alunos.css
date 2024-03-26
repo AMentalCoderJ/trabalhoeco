@@ -352,6 +352,54 @@ z-index: 10000000;
 }
 
 
+@media screen and (max-width: 420px) {
+    .status-aluno, .status-aluno.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        z-index: 9999; /* Certifique-se de que o z-index seja maior que os outros elementos */
+
+        /* Adicione estilos adicionais conforme necessário */
+    }
+    .status-aluno.active{
+        width: 110vw;
+        background-color: #ffffff;
+        left: -30px;
+        
+    }
+    .status-aluno{
+        background-color: #fff;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        gap:5px ;
+        clip-path: circle(0%);
+        box-shadow: 0px 0px 10px #00000075;
+    }
+    .image-status img{
+        border-radius: 50px;
+        height: auto;
+       width: 210px;
+       border: 1px solid black;
+    }
+    .image-status{
+        
+        border-radius: 50px;
+        width: 420px !important;
+        height: 750px;
+        box-shadow: 0px 0px 10px #00000063;
+    
+    }
+    .title-status{
+        font-size: 10px;
+    }
+}
+
+
+
+
 
 
 
