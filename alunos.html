@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="alunos.css">
+    <title>Alunos EcoSocial</title>
+</head>
+<body>
+
+    <div class="intro">
+        <img src="logo.png" alt="">
+    </div><!--intro-->
+
+    
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt=""></a>
+        </div><!--logo-->
+
+        <nav>
+            <ul>
+                <li><a href="#">Alunos</a></li>
+                <li><a href="história.html">História</a></li>
+                <li><a href="professora.html">Professora</a></li>
+                <div class="sobre">
+                <a href="#">Conheça mais Sobre o EcoSocial</a>
+            </div>
+            </ul>
+        </nav>
+
+        <div class="menu-mobile">
+            <div class="animation">
+                <ul>
+                    <li><a href="alunos.html">Alunos</a></li>
+                    <li><a href="história.html">História</a></li>
+                    <li><a href="professora.html">Professora</a></li>
+                    <i class="bi bi-x-lg" onclick="fechar()"></i>
+                </ul>
+            </div><!--animation-->
+            <i class="bi bi-list" id="nav-bar" onclick="clickar()"></i>
+        </div><!--menu-mbile-->
+    </header>
+
+
+    <section class="home">
+
+        <div class="title">
+            <h1>Selecione Um Aluno</h1>
+        </div><!--title-->
+
+<div class="container-alunos">
+
+        <div class="info-aluno">
+            <p>Alexsandro Josué</p>
+            <img src="imgs-alunos/josue.jpeg" alt="" onclick="ativar(),Alexsandro()">
+        </div><!--info-aluno-->
+
+        <div class="info-aluno">
+            <p>Ana Clara</p>
+            <img src="imgs-alunos/nininha.jpeg" alt="" onclick="ativar(),Ana()">
+        </div><!--info-aluno-->
+
+        <div class="info-aluno">
+            <p>Andrei Oliveira</p>
+            <img src="imgs-alunos/du flamengo.jpeg" alt="" onclick="ativar(),Andrei()" >
+        </div><!--info-aluno-->
+
+        <div class="info-aluno">
+            <p>Douglas Marques</p>
+            <img src="imgs-alunos/dg.jpeg" alt="" onclick="ativar(),Douglas()">
+        </div><!--info-aluno-->
+
+        <div class="info-aluno">
+            <p>Erick Rubio</p>
+            <img src="rubio.jpeg" alt="" onclick="ativar(),Erick()">
+        </div><!--info-aluno-->
+
+        <div class="info-aluno">
+            <p>Julya Magalhães</p>
+            <img src="imgs-alunos/julia.jpeg" alt="" onclick="ativar(),Julya()">
+        </div><!--info-aluno-->
+
+        <div class="info-aluno">
+            <p>Kauan Silva</p>
+            <img src="imgs-alunos/do fifa.jpeg" alt="" onclick="ativar(),Kauan()">
+        </div><!--info-aluno-->
+
+        <div class="info-aluno">
+            <p>Leticia Santana</p>
+            <img src="imgs-alunos/lelet.jpeg" alt="" onclick="ativar(),Leticia()">
+        </div><!--info-aluno-->
+
+        <div class="info-aluno">
+            <p>Luiz Fellipe</p>
+            <img src="imgs-alunos/luiz.jpeg" alt="" onclick="ativar(),Luiz()">
+        </div><!--info-aluno-->
+
+        <div class="info-aluno">
+            <p>Maria Luiza</p>
+            <img src="imgs-alunos/maria luiza.png" alt="" onclick="ativar()">
+        </div><!--info-aluno-->
+
+        <div class="info-aluno">
+            <p>Mylena Botão</p>
+            <img src="imgs-alunos/mylena.jpeg" alt="" onclick="ativar(),Mylena()">
+        </div><!--info-aluno-->
+
+        <div class="info-aluno">
+            <p>Raissa da Silva</p>
+            <img src="imgs-alunos/raissa.png" alt="" onclick="ativar(),Raissa()">
+        </div><!--info-aluno-->
+
+        <div class="info-aluno">
+            <p>Rayssa Costa</p>
+            <img src="imgs-alunos/rayssão.png" alt="" onclick="ativar()">
+        </div><!--info-aluno-->
+
+        <div class="info-aluno">
+            <p>Ronald Carvalho</p>
+            <img src="imgs-alunos/ronin 2.jpeg" alt="" onclick="ativar(),RonaldC()">
+        </div><!--info-aluno-->
+
+        <div class="info-aluno">
+            <p>Ronald dos Santos</p>
+            <img src="imgs-alunos/ronin.jpeg" alt="" onclick="ativar(),RonaldS()">
+        </div><!--info-aluno-->
+
+        <div class="info-aluno">
+            <p>Stefani Fernandes</p>
+            <img src="stefani.jpeg" alt="" onclick="ativar(),Stefani()">
+        </div><!--info-aluno-->
+
+        <div class="info-aluno">
+            <p>Thamyres Anchieta</p>
+            <img src="imgs-alunos/thamyres.jpeg" alt="" onclick="ativar(),Thamyres()">
+        </div><!--info-aluno-->
+
+        <div class="info-aluno">
+            <p>Thifany Santo</p>
+            <img src="imgs-alunos/tif.jpeg" alt="" onclick="ativar(),Thifany()">
+        </div><!--info-aluno-->
+
+        
+
+    </div><!--container-alunos-->
+
+    <div class="bg-video">
+        <video src="bg_professora.mp4" autoplay="autoplay" loop muted></video>
+    </div><!--bg-video-->
+
+   
+
+    <div class="status-aluno">
+
+        <div class="image-status">
+            <div class="container-rubio">
+            <img src="rubio.jpeg" alt="" class="imagem-status-java">
+            <h1>Sobre</h1>
+            <p>Desenvolvedor</p>
+            <div class="icons">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+            </div><!--icons-->
+        </div><!--image-status-->
+    </div><!--container--rubio-->
+
+    <div class="title-status">
+        <h1>Minha História</h1>
+        <p class="texto-principal">No Egito antigo, os “escribas” ou escrivães eram pessoas responsáveis pela leitura e produção dos textos nos papiros, espécies de plantas usadas desde 2500 a.C., as quais, por sua vez, constituíam um grande rolo de folhas pregadas umas às outras. Foi por esse motivo, do demasiado volume, que surgiram os pergaminhos, suportes de peles de animais (carneiro, cabra, ovelha, etc.), muito utilizados pelos “monges copistas” da Idade Média. O livro, um produto intelectual, surgiu da necessidade dos povos de guardar o conhecimento e passa-los de geração em geração.</p>
+        <h2>O que Aprendi com o DH?</h2>
+        <p class="secundario">Nesse contexto, importante destacar que a maioria das pessoas, não sabiam ler ou escrever, o que dificultava ainda mais a disseminação desse conhecimento, guardado nas bibliotecas a “sete chaves”.</p>
+    </div><!--stauts-title-->
+
+    <div class="close">
+        <i class="bi bi-x-lg" onclick="ativar()"></i>
+    </div>
+
+    </div><!--status--aluno-->
+
+    <div class="transition">
+        <img src="" alt="" class="bg">
+    </div><!--transition-->
+
+    
+
+    </section>
+
+
+   <script>
+    const transition=document.querySelector(".status-aluno")
+
+function ativar(){
+
+    
+    document.querySelector(".transition").classList.toggle("active")
+    document.querySelector(".bg").src="transition-ezgif.com-gif-maker.gif"
+
+    setTimeout(function(){
+        transition.classList.toggle("active")
+    },1000)
+
+    setTimeout(function(){
+        document.querySelector(".transition").classList.remove("active")
+        document.querySelector(".bg").src="transition-ezgif.com-gif-maker.gif"
+    },3000)
+
+    
+    
+
+
+  
+}
+
+   </script>
+
+   <script>
+
+    function Alexsandro(){
+        document.querySelector(".texto-principal").innerText="Me chamo Alexsandro Josué,  tenho 22 anos, sou impulsionado por uma determinação incansável em alcançar meus objetivos. Sou apaixonado pela tecnologia, encontrando nela não apenas uma ferramenta, mas uma fonte constante de inspiração para mudar minha vida para melhor"
+        document.querySelector(".secundario").innerText="Minha jornada de desenvolvimento humano e profissional tem sido uma busca incessante por crescimento e autenticidade. Cada desafio se torna uma oportunidade de aprendizado, aprimorando minhas habilidades interpessoais, liderança e resiliência, percebo que não estou apenas avançando em minha carreira, mas também construindo relações mais significativas. Todos do ecosocial que passaram na minha vida fizeram a diferença, cada momento, cada memória me marcou para me tornar quem eu sou hoje, quero sempre ser uma metamorfose ambulante e evoluir cada vez mais, para um dia fazer minha história se tornar parte da história."
+        document.querySelector(".imagem-status-java").src="imgs-alunos/josue.jpeg"
+            }
+    function Ana(){
+        document.querySelector(".texto-principal").innerText="Fazer parte do Programa Jovem Eco Social foi uma oportunidade verdadeiramente enriquecedora e gratificante, que desempenhou um papel fundamental no meu desenvolvimento pessoal e profissional. Ao integrar-me a esse programa, tive o privilégio de conhecer indivíduos inspiradores e participar de experiências transformadoras. Essa jornada não apenas ampliou meu entendimento sobre questões ambientais e sociais, mas também fortaleceu minhas habilidades interpessoais, liderança e trabalho em equipe. A oportunidade de contribuir para projetos significativos e participar de iniciativas com impacto positivo proporcionou um aprendizado prático e uma visão mais abrangente sobre os desafios enfrentados pela nossa sociedade"
+        document.querySelector(".secundario").innerText="Além disso, as conexões estabelecidas durante o programa se tornaram uma rede valiosa de apoio e inspiração contínua. Essa experiência não só moldou minha perspectiva em relação ao meu papel como cidadão, mas também serviu como um catalisador para meu crescimento profissional, oferecendo insights valiosos e habilidades práticas que agora aplico no meu dia a dia. Em resumo, fazer parte do Programa Jovem Eco Social foi uma jornada extraordinária, repleta de aprendizados, oportunidades e conexões que moldaram positivamente minha trajetória, tanto no âmbito pessoal quanto profissional. Sou imensamente grato por essa experiência, que deixou um legado duradouro em minha vida."
+        document.querySelector(".imagem-status-java").src="imgs-alunos/nininha.jpeg"
+            }
+
+    function Andrei(){
+        document.querySelector(".texto-principal").innerText="Tive muitas histórias legais, teve as aulas externas onde conheci lugares diferentes, onde eu nunca tinha ido e foi uma experiência bastante legal. Essas histórias foram um aprendizado pra mim e que vai ficar guardado na memória ! "
+        document.querySelector(".secundario").innerText="Aprendi que a gente deve desenvolver mais sobre a gente, ter controle sobre nossas vidas e também sabe reconhecer o lado bom da vida, portanto o DH reforça toda essa reflexão em nossas vidas."
+        document.querySelector(".imagem-status-java").src="imgs-alunos/du flamengo.jpeg"
+    }
+            function Douglas(){
+        document.querySelector(".texto-principal").innerText=""
+        document.querySelector(".secundario").innerText=""
+        document.querySelector(".imagem-status-java").src="imgs-alunos/dg.jpeg"
+            }
+
+            function Erick(){
+        document.querySelector(".texto-principal").innerText="Participar do eco social 2 foi um divisor de águas na minha vida. Inicialmente, eu estava hesitante em comparecer, mas decidi dar uma chance e isso mudou tudo. Conheci pessoas que se tornaram fundamentais na minha jornada, algumas se tornaram amigos próximos e outras abriram portas para oportunidades profissionais inesperadas. A troca de experiências e ideias durante o evento expandiu minha visão de mundo e me fez enxergar novas possibilidades. Além disso, me incentivou a desenvolver habilidades sociais, como comunicação e networking, que são cruciais em diversas áreas da vida. A interação com pessoas de diferentes origens e perspectivas ampliou minha compreensão sobre diversidade e inclusão."
+        document.querySelector(".secundario").innerText="O DH foi um catalisador para meu crescimento pessoal. Desafiei-me a sair da minha zona de conforto, enfrentando situações desconhecidas e explorando novos interesses. Aprendi a confiar mais em mim mesmo e acreditar no meu potencial para alcançar meus objetivos. Em suma, o eco social não apenas me proporcionou momentos memoráveis, mas também teve um impacto significativo na minha trajetória, moldando quem sou hoje e me impulsionando em direção a um futuro mais promissor e gratificante."
+        document.querySelector(".imagem-status-java").src="rubio.jpeg"
+            }
+
+            function Felipe(){
+        document.querySelector(".texto-principal").innerText=""
+        document.querySelector(".secundario").innerText=""
+        document.querySelector(".imagem-status-java").src=""
+            }
+
+            function Julya(){
+        document.querySelector(".texto-principal").innerText="Me chamo Julya Magalhães do Amaral, tenho 21 anos. Em um ambiente profissional sou criativa, proativa, organizada. "
+        document.querySelector(".secundario").innerText="Durante esses 17 meses aperfeiçoei minhas competências ditas acima, obtive mais conhecimentos nas aulas de Desenvolvimento Humano, no dercurso desse projeto adquiri duas ocupações profissionais, não era algo que desejava, porém acho que me abrangeu ainda mais qualificações e aprendizados. Todavia o curso que estabeleci não foi algo que me identifiquei, apesar disso gerei alguns conhecimentos que vou levar pra vida. Estou em processo para ingressar na área a qual me identifico, que é a área da saúde."
+        document.querySelector(".imagem-status-java").src="imgs-alunos/julia.jpeg"
+            }
+
+            function Kauan(){
+        document.querySelector(".texto-principal").innerText="Conheci várias pessoas ótimas no curso. Durante esse percurso, fico feliz de ter feito amigos, conhecido experiências diferentes e sempre com uma turma animada e divertida. Aonde tem uma personalidade forte que sempre mostra que é capaz e se destaca. Fico feliz por ter tido essa turma, aonde além de ter feito ótimos amigos, tive um ótimo aprendizado. Fico feliz por ter ficado no projeto e feliz por sair dele uma pessoa diferente de quando entrei, saindo melhor e preparado."
+        document.querySelector(".secundario").innerText="Em DH, aprendi coisas muito importantes, como me preparar para uma entrevista de emprego, soube fundamentos sobre empregos, descobri meus pontos fortes e fracos. Aprendi a me programar para o futuro, ter metas e saber falar sobre mim. O DH é importante e foi fundamental na minha trajetória no projeto."
+        document.querySelector(".imagem-status-java").src="imgs-alunos/do fifa.jpeg"
+            }
+
+            function Leticia(){
+        document.querySelector(".texto-principal").innerText="No projeto jovem eco social tive muitas memórias, lições e aprendizados, fiz novas amizades que pude aprender lidar com pensamentos diferentes e entender isso. Saí da minha zona de conforto, me livrei de inseguranças que achei que não conseguiria, pude colaborar com melhorias para minha comunidade e ensinamentos sobre o meio ambiente que levarei no meu dia a dia e para vida."
+        document.querySelector(".secundario").innerText="no DH evolui não só como pessoa mas também profissionalmente, pude conhecer melhor sobre mim mesma, mudar minha forma de pensar em vários aspectos e saio do Eco bem mais segura de mim e preparada pra minha vida profissional."
+        document.querySelector(".imagem-status-java").src="imgs-alunos/lelet.jpeg"
+            }
+
+            function Luiz(){
+        document.querySelector(".texto-principal").innerText="Meu nome é Luiz fellipe, tenho 21 anos e gosto muito da área de programação, e foi isso que me levou a entrar nesse curso, já sabia desde do início que isso seria uma fonte de conhecimento para mim. "
+        document.querySelector(".secundario").innerText="Com o Dh me dediquei ao autoconhecimento, explorando minhas paixões, talentos e limitações, ao longo da minha jornada percebi que o verdadeiro crescimento pessoal não se trata apenas de obter conhecimento externo, mas também se conectar comigo mesmo e com outras pessoas de maneira mais autentica e significativa."
+        document.querySelector(".imagem-status-java").src="imgs-alunos/luiz.jpeg"
+            }
+
+            function Maria(){
+        document.querySelector(".texto-principal").innerText=""
+        document.querySelector(".secundario").innerText=""
+        document.querySelector(".imagem-status-java").src=""
+            }
+
+            function Mylena(){
+        document.querySelector(".texto-principal").innerText="Me chamo Mylena Botão  da Silva, tenho 18 anos, me formarei no curso de desenvolvedor de aplicativo. Em 17 meses tive grandes progressos em minha vida profissional e pessoal, no início do curso eu era tímida e insegura, mas com a ajuda do DH, consegui vencer. Nas aulas específicas do curso obtive conhecimentos e aprendizados."
+        document.querySelector(".secundario").innerText="Desenvolvi e explorei competências como trabalho em grupo, proatividade, comprometimento e organização."
+        document.querySelector(".imagem-status-java").src="imgs-alunos/mylena.jpeg"
+            }
+
+            function Raissa(){
+        document.querySelector(".texto-principal").innerText="Meu nome é Raissa, tenho 18 anos, moro em Niterói. Hoje saio do Eco sabendo muito mais coisas que antes, do que quando eu cheguei aqui. Mas não me vejo nessa área de tecnologia."
+        document.querySelector(".secundario").innerText="Faço curso de desenvolvedor de aplicativo, porém não me encontrei nessa área, pois quero estar na área da saúde, vejo que também que desenvolvi muito na aula de DH."
+        document.querySelector(".imagem-status-java").src="imgs-alunos/raissa.png"
+            }
+
+            function Rayssa(){
+        document.querySelector(".texto-principal").innerText=""
+        document.querySelector(".secundario").innerText=""
+        document.querySelector(".imagem-status-java").src=""
+            }
+
+            function RonaldC(){
+        document.querySelector(".texto-principal").innerText="Meu nome é Ronald Carvalho, moro em Niterói. Trago esse relato contando um pouco da minha trajetória no curso Eco Social II, onde eu consegui desenvolver qualidades no curso técnico que eu tinha como meta iniciar. aprendi diversos módulos que fez abrir minha visão no meio tecnológico..."
+        document.querySelector(".secundario").innerText="Levo na minha memória momentos bons, como uma ação que aconteceu na aula de DH  (Desenvolvimento humano) fizemos um café da manhã comunitário, (para pessoas de situação de rua), além de poder propor um café da manhã, tivemos um tempo de conversa com cada um deles Nessa reta final do Eco, com esse tom de despedida, venho agradecer a disponibilidade de todos os envolvidos Leandro (Agente de cidadania), Wagner (Professor de App) Obrigado por todo conhecimento que vocês me proporcionaram."
+        document.querySelector(".imagem-status-java").src="imgs-alunos/ronin 2.jpeg"
+            }
+            function RonaldS(){
+        document.querySelector(".texto-principal").innerText="O projeto jovem eco social que participei mudou minha vida de várias formas. Conheci pessoas incríveis que se tornaram amigos próximos, ampliei minha rede de contatos e oportunidades profissionais. Além disso, aprendi muito sobre mim mesmo, descobrindo novos interesses.A experiência me incentivou a sair da minha zona de conforto e buscar novas aventuras, contribuindo para o meu crescimento pessoal e profissional e desenvolvimento contínuo."
+        document.querySelector(".secundario").innerText="Com o dh eu aprendi alinhar meus valores com minhas ações diárias,aprendi a priorizar meu bem estar e ter um equilíbrio entre trabalho,lazer e autocuidado."
+        document.querySelector(".imagem-status-java").src="imgs-alunos/ronin.jpeg"
+            }
+            function Stefani(){
+        document.querySelector(".texto-principal").innerText="Ao iniciar o curso pensei que não pertencia a esse ambiente tecnológico, pois, nunca me imaginei Desenvolvendo Aplicativos. Contudo, ampliar meus horizontes, me trazia uma sensação de que seria bom tentar algo novo. Participar desse projeto é algo extremamente gratificante. Digo é, pois, sempre serei parte. Em meu coração, o Eco Social jamais terá fim."
+        document.querySelector(".secundario").innerText="Tive que aprender a conviver com pessoas diferentes, opiniões contrárias e novas vertentes de pensamentos. Trago conhecimentos adquiridos durante o curso. Não somente de competências acadêmicas, mas, também sócio emocionais. Explorei novas soft skills e aprimorei as quais já tinha. Antes do curso, me via apenas em uma linha profissional. Entretanto, as vivências me abriram um leque de novas opções."
+        document.querySelector(".imagem-status-java").src="imgs-alunos/stefani.jpeg"
+            } 
+            function Thamyres(){
+        document.querySelector(".texto-principal").innerText="O projeto eco social foi um grande aprendizado, tive a experiência de vivenciar momentos bons,participar de aulas muito importantes na minha carreira profissional. Consegui me sentir segura em relação as novas oportunidades e inseguranças, tenho amizades que vou levar sempre comigo,me adaptei a nova rotina e superei meus medos. O projeto foi essencial na minha vida e fez com que eu conhecesse mais sobre mim mesma"
+        document.querySelector(".secundario").innerText=" Com o as aulas de DH tive um desenvolvimento da capacidade de raciocinar. Aprimoramento do pensamento, solucionar alguns problemas."
+        document.querySelector(".imagem-status-java").src="imgs-alunos/thamyres.jpeg"
+            }
+            function Thifany(){
+        document.querySelector(".texto-principal").innerText="Sou moradora de Santa Rosa, Niterói e atualmente tenho 23 anos. Sou estudante de Administração e também curso Ciências Sociais na Universidade Federal Fluminense."
+        document.querySelector(".secundario").innerText="O DH serviu para aprimorar não só o meu lado pessoal e meu pensamento crítico, como também a minha relação com o próximo e o modo como olhar o mundo ao redor."
+        document.querySelector(".imagem-status-java").src="imgs-alunos/tif.jpeg"
+            }
+
+
+
+            
+   </script>
+
+   
+
+<script>
+
+    const ativar1=document.querySelector(".animation")
+    const opacity=document.querySelector("#nav-bar")
+
+    function clickar(){
+        ativar1.classList.toggle("active")
+        opacity.classList.toggle("active")
+    }
+
+    function fechar(){
+        ativar1.classList.toggle("active")
+        setTimeout(function(fechar){
+        opacity.classList.toggle("active")
+},1000)
+    }
+
+
+</script>
+    
+</body>
+</html>

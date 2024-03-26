@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="fav-icon.png" type="image/x-icon">
+    <title>E-Book EcoSocial</title>
+</head>
+<body>
+
+    
+
+    <div class="intro">
+        <img src="logo.png" alt="">
+    </div><!--intro-->
+
+    <header>
+        <div class="logo">
+            <a href="#"><img src="logo.png" alt=""></a>
+        </div><!--logo-->
+
+        <nav>
+            <ul>
+                <li><a href="alunos.html">Alunos</a></li>
+                <li><a href="história.html">História</a></li>
+                <li><a href="professora.html">Professora</a></li>
+                <div class="sobre">
+                <a href="#">Conheça mais Sobre o EcoSocial</a>
+            </div>
+            </ul>
+        </nav>
+
+        <div class="menu-mobile">
+            <div class="animation">
+                <ul>
+                    <li><a href="alunos.html">Alunos</a></li>
+                    <li><a href="história.html">História</a></li>
+                    <li><a href="professora.html">Professora</a></li>
+                    <i class="bi bi-x-lg" onclick="fechar()"></i>
+                </ul>
+            </div><!--animation-->
+            <i class="bi bi-list" id="nav-bar" onclick="clickar()"></i>
+        </div><!--menu-mbile-->
+    </header>
+
+
+    <section class="home">
+        <div class="title-home">
+            <h1>Desenvolvimento Humano <br>Jovem <span>Eco Social</span></h1>
+            <p>Desenvolvimento Técnico, Social e Ambiental para 500 Jovens de Niterói. <br>Conheça um pouco sobre nós</p>
+            <div class="atalhos">
+            <a href="alunos.html">Alunos</a>
+            <a href="#">Sobre nós</a>
+        </div><!--atalhos--->
+        </div><!--title--home-->
+
+        <div class="image-home">
+            <img src="home-photo.jpg" alt="">
+        </div><!--image-home-->
+
+        <div class="bg-video">
+            <video src="bg_professora.mp4" autoplay="autoplay" loop muted></video>
+        </div><!--bg-video-->
+
+
+    </section>
+
+    <script>
+        const ativar=document.querySelector(".animation")
+        const opacity=document.querySelector("#nav-bar")
+
+        function clickar(){
+            ativar.classList.toggle("active")
+            opacity.classList.toggle("active")
+        }
+
+        function fechar(){
+            ativar.classList.toggle("active")
+            setTimeout(function(fechar){
+            opacity.classList.toggle("active")
+    },1000)
+        }
+
+
+        
+
+
+       
+
+
+
+    </script>
+    
+</body>
+</html>
